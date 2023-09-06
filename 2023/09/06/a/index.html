@@ -13,17 +13,22 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://UGOtang.github.io/nblog/archives/2023/"/>
+    <link rel="canonical" href="https://UGOtang.github.io/nblog/2023/09/06/a/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://ugotang.github.io/nblog/archives/2023/index.html">
+        <meta name="description" content="首先先通过shell生成，第二个账号的密钥 1ssh-keygen -t rsa -b 4096 -C &quot;user2@qq.com&quot; -f ~&#x2F;.ssh&#x2F;user2  生成完之后，应该会看到一个公钥和私钥,我们把公钥先放到第二个github账号里 然后我们找到~&#x2F;.ssh&#x2F;config，对不同的url使用不同的映射规则 12345678910111213#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="github下两个账号切换，如何处理密钥">
+<meta property="og:url" content="https://ugotang.github.io/nblog/2023/09/06/a/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="首先先通过shell生成，第二个账号的密钥 1ssh-keygen -t rsa -b 4096 -C &quot;user2@qq.com&quot; -f ~&#x2F;.ssh&#x2F;user2  生成完之后，应该会看到一个公钥和私钥,我们把公钥先放到第二个github账号里 然后我们找到~&#x2F;.ssh&#x2F;config，对不同的url使用不同的映射规则 12345678910111213#">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-06T10:46:45.000Z">
+<meta property="article:modified_time" content="2023-09-06T11:03:16.562Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="ohter">
 <meta name="twitter:card" content="summary">
     
     
@@ -36,7 +41,7 @@
     
     <title>
         
-            Archive: 2023 -
+            github下两个账号切换，如何处理密钥 -
         
         代码小窝
     </title>
@@ -199,35 +204,220 @@
             <div class="main-content">
 
                 
-                    <div class="archive-container ">
-    
-<div class="archive-list-container">
-    
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2023</span>
-                <span class="archive-year-post-count">[2]</span>
+                    <div class="post-page-container">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            
+                <h1 class="article-title-regular">github下两个账号切换，如何处理密钥</h1>
+            
             </div>
-            <ul class="article-list">
-              
-              <li class="article-item" date-is='09-06'>
-                <a href="/nblog/2023/09/06/a/">
-                  <span class="article-title">github下两个账号切换，如何处理密钥</span>
-                </a>
-              </li>
-              
-              <li class="article-item" date-is='09-05'>
-                <a href="/nblog/2023/09/05/hello-world/">
-                  <span class="article-title">Hello World</span>
-                </a>
-              </li>
-              
+            
+                    
+        
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/nblog/images/icon.png">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">唐帅</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-09-06 18:46:45</span>
+        <span class="mobile">2023-09-06 18:46:45</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-09-06 19:03:16</span>
+            <span class="mobile">2023-09-06 19:03:16</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/nblog/tags/ohter/">ohter</a>&nbsp;
+                    </li>
+                
             </ul>
-        </section>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
 
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body">
+            <p>首先先通过shell生成，第二个账号的密钥</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">&quot;user2@qq.com&quot;</span> -f ~/.ssh/user2</span><br></pre></td></tr></table></figure></div>
+
+<p>生成完之后，应该会看到一个公钥和私钥,我们把公钥先放到第二个github账号里</p>
+<p><strong>然后我们找到~&#x2F;.ssh&#x2F;config，对不同的url使用不同的映射规则</strong></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># user1</span><br><span class="line">Host github.com</span><br><span class="line">  HostName github.com</span><br><span class="line">  User git</span><br><span class="line">  IdentityFile ~/.ssh/user1</span><br><span class="line">  IdentitiesOnly yes</span><br><span class="line"></span><br><span class="line"># user2</span><br><span class="line">Host user2</span><br><span class="line">  HostName github.com</span><br><span class="line">  User git</span><br><span class="line">  IdentityFile ~/.ssh/user2</span><br><span class="line">  IdentitiesOnly yes</span><br></pre></td></tr></table></figure></div>
+
+<p>这样配置后，我们如果想使用user2（默认是user1）去commit或者pull的话，就要使用类似这样的地址<code>https://~~github.com/~~ user2/alovajs/alova.git</code></p>
+<p>这样，我们就可以使用第二个账号的密钥了</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> github下两个账号切换，如何处理密钥</li>
+        <li><strong>Author:</strong> 唐帅</li>
+        <li><strong>Created at
+                :</strong> 2023-09-06 18:46:45</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2023-09-06 19:03:16
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://ugotang.github.io/nblog/2023/09/06/a/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+            This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>.
+            
+
+        </li>
+    </ul>
 </div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/nblog/tags/ohter/">#ohter</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                        rel="next"
+                        href="/nblog/2023/09/05/hello-world/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container">
+                <div class="comments-container pjax">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;Comments
+    </div>
+    
+
+        
+            
+ 
+    <div id="waline"></div>
+    <script type="module"  data-swup-reload-script>
+        import { init } from 'https://evan.beee.top/js/waline.mjs';
+
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://UGOtang.github.io/nblog/',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+            });
+        }
+
+        if ('true') {
+            const loadWalineTimeout = setTimeout(() => {
+                loadWaline();
+                clearTimeout(loadWalineTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadWaline);
+        }
+        
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">github下两个账号切换，如何处理密钥</div>
+        
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
 
                 
 
@@ -300,6 +490,27 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
